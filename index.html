@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #content {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Manipulation Example</h1>
+    <p id="content">This is the original paragraph text.</p>
+    <button class="button" id="changeTextButton">Change Text</button>
+    <button class="button" id="changeTextBackButton">Change Text Back</button>
+    <button class="button" id="changeStyleButton">Change Background</button>
+    <button class="button" onclick="document.getElementById('content').style.fontSize='35px'">ZOOOOooooom In</button>
+    <button class="button" onclick="changeFont()">Change Font</button>
+    <script>
+        function changeFont() {
+            document.getElementById('content').style.fontFamily =  "Rock Salt", cursive;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
